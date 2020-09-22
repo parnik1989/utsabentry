@@ -1,0 +1,43 @@
+<div class="container">
+    <p class="searchHeading">Search Visitor</p>
+    <div class="searchBox">
+        <input class="searchInput" type="search" id="search" placeholder="Enter Mobile No. " [(ngModel)]="searchString">
+        <button type="submit" (click)="searchMembers()"> Search</button>
+    </div>
+    <div class="resultBox">
+        <p class="resultHeading"> Search Result </p>
+        <p *ngIf="noData"> You are not allowed to enter in this slot. Please co-operate.</p>
+        <div *ngFor="let member of memberList">
+            <table style="width:100%">
+                <tr>
+                    <td>Mobile No </td>
+                    <td>{{member.Mobile}}</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>{{member.Name}}</td>
+                </tr>
+                <tr>
+                    <td>Visitor Type</td>
+                    <td>{{member.Type}}</td>
+                </tr>
+                <tr>
+                    <td>Allowed Date</td>
+                    <td>{{member.Date}}</td>
+                </tr>
+                <tr>
+                    <td>Allowed Slot</td>
+                    <td>{{member.Time}}</td>
+                </tr>
+                <tr>
+                    <td>No Of Person Allowed</td>
+                    <td>{{member.Count}}</td>
+                </tr>
+                <tr>
+                    <td>Govt ID</td>
+                    <td>{{member.ID}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

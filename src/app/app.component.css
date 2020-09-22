@@ -1,0 +1,58 @@
+.container {
+    height: 650px;
+    background-color: #EF5350;
+    background-attachment: fixed;
+}
+
+.searchHeading {
+    font-family: cursive;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.searchBox {
+    text-align: center;
+    height: 50px;
+    padding: 5% 0%;
+}
+
+.searchInput {
+    text-align: center;
+    height: 100%;
+    width: 90%;
+}
+
+button {
+    margin: 5%;
+    height: 60%;
+    width: 30%;
+    border-radius: 15%;
+    border: 2px solid;
+}
+
+.resultBox {
+    padding: 5% 5%;
+}
+
+.resultHeading {
+    font-family: cursive;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+    height: 40px;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+    height: 40px;
+}
+
+td {
+    padding: 0px 5px;
+}
